@@ -1,0 +1,177 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 80px; /* Sesuaikan dengan tinggi header */
+}
+
+/* Header */
+header {
+    background-color: #251f80;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed; /* Tetap di atas saat di-scroll */
+    top: 0; /* Tempelkan ke bagian atas layar */
+    width: 100%; /* Pastikan header memenuhi lebar layar */
+    z-index: 1000; /* Pastikan header berada di depan elemen lainnya */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek */
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section */
+section {
+    padding: 60px 0;
+}
+
+section .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Pastikan elemen tetap pada satu baris */
+    gap: 20px; /* Jarak antar elemen */
+    margin-top: 50px;
+    overflow-x: auto; /* Tambahkan scroll horizontal jika elemen terlalu banyak */
+}
+
+.service {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Pastikan semua elemen memiliki lebar konsisten */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    flex-shrink: 0; /* Hindari elemen mengecil jika ruang terbatas */
+}
+
+.service:hover {
+    background-color: #f0f8ff; /* Ubah warna latar belakang saat hover */
+    transform: translateY(-10px); /* Tambahkan efek naik */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan lebih tebal */
+}
+
+
+/* Section Team */
+.team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.member {
+    text-align: center;
+    width: 30%;
+}
+
+.member img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    flex-shrink: 0; /* Hindari elemen mengecil jika ruang terbatas */
+}
+
+.member img :hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+    transform: translateY(-10px); /* Tambahkan efek naik */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan lebih tebal */
+}
+
+.member h3 {
+    font-size: 18px;
+}
+
+.member p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Section Contact */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #251f80;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
